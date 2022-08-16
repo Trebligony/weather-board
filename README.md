@@ -1,6 +1,10 @@
 # weather-board
 Developed a graphical user interface (GUI) that is powered by the [OpenWeather API] (https://openweathermap.org/api), which allows users to retrieve weather information for specific cities. Utilizes 'localStorage' to keep track of any cities that have been looked up in the past, and gives the user the ability to quickly access them again.
 
+# GUI dashboard
+
+<img src="./assets/images/image.png"> 
+
 
 ## User Story
 
