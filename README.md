@@ -32,18 +32,22 @@ THEN I am again presented with current and future conditions for that city
 
 ## Deep Dive
 
+I spent some time during this challenge learning the distinction between AJAX and Fetch and then experimenting with both of those technologies. Specifically the AJAX.fail function, which was one of my favorites from that package. In addition to that, I made an effort to keep expanding my knowledge of the arrow function and incorporating it into my code. I recently encountered a Cross-origin resource sharing (CORS) error - when working on "Premium Restaurants Search" project, for the first time, and here again, I believe I was able to find a solution for it by using the cors-anywhere API link that is provided below.
+
+## CORS API Link
+
+https://cors-anywhere.herokuapp.com/
+
 ## Live application link
 
  https://trebligony.github.io/weather-board/
 
 
 
-## Cross Origin Resources (CORS) API link
+## Other API link
 
 https://www.freecodecamp.org/news/when-and-why-you-should-use-es6-arrow-functions-and-when-you-shouldnt-3d851d7f0b26/
 
 https://www.xul.fr/en/html5/fetch.php
-
-https://cors-anywhere.herokuapp.com/
 
 https://api.jquery.com/jQuery.ajax/
