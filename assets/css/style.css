@@ -5,7 +5,7 @@
     background-size: cover;
     background-position-y: 40%;
     color:white;
-    background-color:rgb(83, 83, 83);
+    background-color:rgb(248, 58, 58);
     position:relative !important;
 }
 
@@ -45,7 +45,7 @@
 
 /* clear storage below list of cities */
 #clear-storage{
-    color:grey;
+    color:rgb(73, 17, 17);
     text-decoration: none;
     font-size:.75em;
     margin: .5em 0em 0em .5em;
@@ -54,14 +54,14 @@
 /* Weather card styling */
 .weather-card{
     width: 9rem;
-    background-color: #0275d8;
+    background-color: #09d802;
     color: white;
     text-align: center;
 }
 
 /* UV coloring scheme for UV display */
 .uv-favorable{
-    background-color: green;
+    background-color: rgb(0, 30, 128);
     border-radius: 5px;
     color: white;
 }
