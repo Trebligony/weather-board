@@ -44,7 +44,7 @@ https://cors-anywhere.herokuapp.com/
 
 
 
-## Other API link
+## Other API links
 
 https://www.freecodecamp.org/news/when-and-why-you-should-use-es6-arrow-functions-and-when-you-shouldnt-3d851d7f0b26/
 

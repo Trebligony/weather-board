@@ -76,7 +76,8 @@ var getCurrentConditions = (event) => {
        
        
         // API solution for Cross-origin resource sharing (CORS) error: https://cors-anywhere.herokuapp.com/
-        uvQueryURL = "https://cors-anywhere.herokuapp.com/" + uvQueryURL;
+       // uvQueryURL = "https://cors-anywhere.herokuapp.com/" + uvQueryURL;
+        uvQueryURL = "https://fast-dawn-89938.herokuapp.com/" + uvQueryURL;
         // Fetch the UV information and build the color display for the UV index
         fetch(uvQueryURL)
         .then(handleErrors)
