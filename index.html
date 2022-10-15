@@ -12,53 +12,72 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
-    <div class="container">
-      <a href="#" class="navbar-brand m-auto"><i class="fas fa-cloud-sun"></i> Weather Dashboard</a>
-    </div>
-  </nav>
+
   <section id="showcase">
     <div class="container">
       <div class="row">
-        <aside class="col-lg-3 py-3 bg-dark">
-          <h3 class="card-title">Search for a City</h3>
+        <aside class="col-lg-3 py-3" style="background-color:#669999;">
+          
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Enter City..." id="city" required />
-            <button class="btn btn-secondary my-2 my-sm-0" id="search-button" type="submit">
+            <button class="btn btn-secondary my-2 my-sm-0" style="background-color:#527a7a;" id="btnSearch" type="submit">
               <i class="fas fa-search"></i>
             </button>
-            <div class="card mt-5" id="recent-searches">
-              <div class="card-header">
+            <div class="card mt-3" id="recentSearch">
+              <div class="card-header" style="background-color:#94b8b8;">
                 <h6>Recently Viewed Cities</h6>
               </div>
-              <ul class="list-group list-group-flush" id="recent-searches-list">
+              <ul class="list-group list-group-flush" id="recentSearchList">
                </ul> 
-               <button class='clear btn btn-secondary my-2 my-sm-0'>Clear History</button>
+               <button class='clear btn btn-secondary my-2 my-sm-0' style="background-color:#527a7a;">Clear History</button>
             </div>
           </form>
         </aside>
         
         <section id="weather-info" class="col-lg-9">
-          <div class="jumbotron bg-dark text-light" id="city-info">
-            <h1 class="display-5 mb-4 font-weight-bold"><span id="city-name"></span> <span id="date-today"></span> <img id="weather-icon" /></h1>
-            <p class="lead">
-              Temperature: <i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span id="temperature"></span id="temperature">
-            </p>
-            <p class="lead">
-              Humidity: <i class="fas fa-tint fa-fw" style="color: #868B94;"></i><span id="humidity"></span>
-            </p>
-            <p class="lead">
-              Wind Speed: <i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span id="wind-speed"></span>
-            </p>
-            <p class="lead">
-              UV Index: <span id="uv-index"></span>
-            </p>
+		   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#5c8a8a;">
+			<div class="container">
+			  <a href="#" class="navbar-brand m-auto text-dark text-uppercase"><i class="fas fa-cloud-sun"></i> <b>Weather Dashboard</b></a>
+			</div>
+		  </nav>
+          <div class="jumbotron text-light text-dark" id="city-info" style="background-color:#669999;">
+            <h1 class="display-5  font-weight-bold text-uppercase" style="color: #000000;"><span id="city-name"></span> <span id="date-today"></span></h1>
+            
+			<table>
+				<tbody>
+					<tr>
+						<td>Temperature</td>
+						<td><i class="fas fa-sun fa-fw" style="color: #e6e600;" ></i> </td>
+						<td><span id="temperature"></span></td>
+					</tr>
+						<tr>
+						<td>Humidity</td>
+						<td><i class="fas fa-tint fa-fw" style="color: #3399ff;"></i></td>
+						<td><span id="humidity"></span></td>
+					</tr>
+					<tr>
+						<td>Wind Speed</td>
+						<td><i class="fas fa-wind fa-fw" style="color: #6b6b47;"></i></td>
+						<td><span id="wind-speed"></span></td>
+					</tr>
+					<tr>
+						<td>UV Index</td>
+						<td><i class="fas fa-water fa-fw" style="color: #ff9900;" ></td>
+						<td><span id="uv-index"></span></td>
+					</tr>
+				</tbody>
+			</table>
+			<hr />
+			
+			<div id="forecast">
+				<h2 class="display-lead font-weight-bold text-uppercase" style="color: #000000;" id="forecast-title">5-Day Forecast: </h2>
+				<hr />
+				<div class="row" id="forecast-city-week"></div>
+			</div>
+			
           </div>
           
-          <div id="forecast">
-            <h2 class="display-lead font-weight-bold" id="forecast-title">5-Day Forecast: </h2>
-            <div class="row m-auto" id="city-week-forecast"></div>
-          </div>
+         
         </section>
       </div>
     </div>
